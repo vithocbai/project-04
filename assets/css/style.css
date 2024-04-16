@@ -2,6 +2,9 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #ff5b2e;
+}
 html {
     font-size: 62.5%;
 }
@@ -54,6 +57,12 @@ a {
     width: 100%;
 }
 
+.btn--primary {
+    color: #fff !important;
+    background: var(--primary-color) !important;
+    border: var(--primary-color) !important;
+}
+
 h1,
 h2,
 h3,
@@ -80,6 +89,19 @@ textarea {
     margin: 0 auto;
 }
 
+.section-heading {
+    color: #000958;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 119.231%;
+}
+
+.about__desc {
+    color: #656689;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.87;
+}
 /* === Header === */
 .header {
     padding: 26px 0;
@@ -139,6 +161,7 @@ textarea {
 .hero__media {
     display: flex;
     position: relative;
+    padding-bottom: 90px;
 }
 
 .hero__media--wrap {
@@ -188,7 +211,7 @@ textarea {
 .hero-list {
     position: absolute;
     left: 130px;
-    bottom: -94px;
+    bottom: 0;
     width: 250px;
     height: 156px;
     padding: 18px 14px;
@@ -225,15 +248,11 @@ textarea {
 
 .hero__skeleton {
     margin-top: 7px;
-    width: 118px;
+    width: var(--width, 118px);
     height: 4px;
     border-radius: 10px;
     opacity: 0.08;
     background: #000958;
-}
-
-.hero__skeleton--short {
-    width: 40px;
 }
 
 .hero__separate {
@@ -273,12 +292,9 @@ textarea {
     --height: 60px;
     height: var(--height);
     min-width: 190px;
-    color: #fff;
     font-size: 1.6rem;
     font-weight: 600;
-    background: #ff5b2e;
     box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
-    border: none;
 }
 
 .hero__icon {
@@ -293,11 +309,77 @@ textarea {
     background-color: #fff;
 }
 
-.hero__book--call {
+.hero__book--link {
     margin-left: 24px;
     font-weight: 500;
     font-size: 1.6rem;
     line-height: 1;
     text-decoration: underline;
     color: #000958;
+}
+
+/* === About === */
+.about {
+    margin-top: 138px;
+}
+
+.about__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about__label {
+    color: #5e6085;
+    font-family: Sora;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.about__heading {
+    margin-top: 15px;
+    max-width: 446px;
+}
+
+.about__desc {
+    max-width: 446px;
+    margin-top: 24px;
+}
+
+.about__check-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+    margin-top: 57px;
+    gap: 36px;
+}
+
+
+.about__check-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+    color: #48496a;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.about__check-item::before {
+    display: inline-block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-color: #ff5d31;
+    box-shadow: 0px 4px 15px -3px rgba(255, 93, 49, 0.69);
+    border-radius: 4px;
+}
+
+.about__check-item::after {
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    display: inline-block;
+    content: url(../icon/check.svg);
 }
