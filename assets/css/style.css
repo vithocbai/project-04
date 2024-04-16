@@ -9,8 +9,8 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
+    background: #fffaf5;
 }
-
 
 /* Common */
 a {
@@ -30,7 +30,7 @@ a {
     line-height: var(--height);
     text-align: center;
     border-radius: 99px;
-    border: 1px solid rgba(0,9,88,0.7);
+    border: 1px solid rgba(0, 9, 88, 0.7);
     overflow: hidden;
 }
 
@@ -81,7 +81,6 @@ textarea {
 
 /* === Header === */
 .header {
-    background: #fffaf5;
     padding: 26px 0;
 }
 
@@ -123,4 +122,109 @@ textarea {
 .header-actions__btn {
     --height: 50px;
     height: var(--height);
+}
+
+/* === Hero === */
+.hero {
+    padding-top: 70px;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__media {
+    display: flex;
+    position: relative;
+    width: 47%;
+}
+
+.hero__media--wrap {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    width: 388px;
+    height: 488px;
+    background: #fe997b;
+    border-radius: 16px;
+    border: 3px solid #fff;
+}
+
+.hero__pet {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.hero__media--small {
+    align-self: flex-end;
+    width: 186px;
+    height: 244px;
+    border-radius: 16px;
+    background: #faa7ad;
+    border: 2px solid #fde0e2;
+    margin:0 0  -58px -24px;
+
+}
+
+.hero__decorate {
+    position: absolute;
+    left: -58px;
+    bottom: 10px;
+    z-index: -1;
+}
+
+.hero__decorate--right {
+    position: absolute;
+    top: 16px;
+    right: -40px;
+}
+
+.hero__board {
+    position: absolute;
+    top: 426px;
+    left: 170px;
+    width: 250px;
+    border-radius: 10px;
+    background: #fff;
+    padding: 18px 14px;
+    box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+}
+
+.hero__row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero__sub-heading {
+    color: #181e52;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero__skeleton {
+    margin-top: 7px;
+    width: 118px;
+    height: 4px;
+    border-radius: 10px;
+    opacity: 0.08;
+    background: #000958;
+}
+
+.hero__skeleton--40 {
+    width: 40px;
+}
+
+.hero__separate {
+    margin: 20px 0;
+    min-width: 100%;
+    height: 2px;
+    background: #f2f2f2;
 }
