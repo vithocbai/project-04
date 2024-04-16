@@ -87,9 +87,22 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;
-            1,900&family=Sora:wght@100..800&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Font icon -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
         />
         <!-- Style -->
         <link rel="stylesheet" href="./assets/css/style.css" />
@@ -101,7 +114,7 @@
                 <div class="header__inner">
                     <!-- Logo -->
                     <a href="" class="logo">
-                        <img src="./assets/icon/Logo.svg" alt="Lucy">
+                        <img src="./assets/icon/Logo.svg" alt="Lucy" />
                     </a>
                     <!-- Navigation -->
                     <nav class="navbar">
@@ -113,17 +126,19 @@
                                 <a href="" class="navbar__link">About</a>
                             </li>
                             <li class="navbar__item">
-                                <a href="" class="navbar__link">Services & Rates</a>
+                                <a href="" class="navbar__link"
+                                    >Services & Rates</a
+                                >
                             </li>
                             <li class="navbar__item">
-                                <a href="" class="navbar__link">Reviewa</a>
+                                <a href="" class="navbar__link">Reviews</a>
                             </li>
                             <li class="navbar__item">
                                 <a href="" class="navbar__link">Contact us</a>
                             </li>
                         </ul>
                     </nav>
-                    
+
                     <!-- Actions -->
                     <button class="header-actions">
                         <a href="#!" class="header-actions__link">Sign in</a>
@@ -132,7 +147,7 @@
                 </div>
             </div>
         </header>
-        <main style="height: 10000px;">
+        <main style="height: 10000px">
             <!-- Hero -->
             <section class="hero">
                 <div class="container">
@@ -140,51 +155,93 @@
                         <!-- Hero Media -->
                         <div class="hero__media">
                             <div class="hero__media--wrap">
-                                <img src="./assets/img/pet-01.png" alt="" class="hero__pet" 
-                                >
+                                <img
+                                    src="./assets/img/pet-01.png"
+                                    alt=""
+                                    class="hero__pet"
+                                />
                                 <!-- Decorate -->
-                                <img src="./assets/icon/deco-01.svg" alt="" class="hero__decorate ">
-                                <img src="./assets/icon/deco-02.svg" alt="" class="hero__decorate--right">
+                                <img
+                                    src="./assets/icon/deco-01.svg"
+                                    alt=""
+                                    class="hero__decorate"
+                                />
+                                <img
+                                    src="./assets/icon/deco-02.svg"
+                                    alt=""
+                                    class="hero__decorate--right"
+                                />
                             </div>
                             <div class="hero__media--wrap hero__media--small">
-                                <img src="./assets/img/pet-02.png" alt="" class="hero__pet" 
-                                >
+                                <img
+                                    src="./assets/img/pet-02.png"
+                                    alt=""
+                                    class="hero__pet"
+                                />
                             </div>
                             <!-- Hero Board -->
-                            <div class="hero__board">
-                                <div class="hero__row">
-                                    <div class="hero__pet">
-                                        <img src="./assets/img/pet-03.png" alt="">
-                                    </div>
+                            <div class="hero-list">
+                                <div class="hero-list-item">
+                                    <img
+                                        class="hero-list-item__thumb"
+                                        src="./assets/img/pet-03.png"
+                                        alt=""
+                                    />
                                     <!-- Hero info -->
                                     <div class="hero__info">
-                                        <h3 class="hero__sub-heading">
+                                        <p class="hero__title">
                                             Pet Health
-                                        </h3>
+                                        </p>
                                         <div class="hero__skeleton"></div>
-                                        <div class="hero__skeleton hero__skeleton--40"></div>
+                                        <div
+                                            class="hero__skeleton hero__skeleton--short"
+                                        ></div>
                                     </div>
                                 </div>
                                 <div class="hero__separate"></div>
-                                <div class="hero__row">
-                                    <div class="hero__pet">
-                                        <img src="./assets/img/pet-05.png" alt="">
-                                    </div>
+                                <div class="hero-list-item">
+                                    <img
+                                        class="hero-list-item__thumb pet-04"
+                                        src="./assets/img/pet-04.png"
+                                        alt=""
+                                    />
                                     <!-- Hero info -->
                                     <div class="hero__info">
-                                        <h3 class="hero__sub-heading">
-                                            Pet care
-                                        </h3>
+                                        <p class="hero__title">
+                                            Pet Health
+                                        </p>
                                         <div class="hero__skeleton"></div>
-                                        <div class="hero__skeleton hero__skeleton--40"></div>
+                                        <div
+                                            class="hero__skeleton hero__skeleton--short"
+                                        ></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Hero content -->
-                    <div class="hero__content">
-
+                        <!-- Hero content -->
+                        <section class="hero__content">
+                            <h1 class="hero__heading">
+                                Established &Trusted Pet Care Service
+                            </h1>
+                            <h2 class="hero__desc">
+                                Discover a wide variety of Pawsitive services to
+                                choose from, including daycare, private walks,
+                                office duty and spa.
+                            </h2>
+                            <div class="hero__row">
+                                <a href="#!" class="btn hero__book--btn"
+                                    >Book a Meet
+                                    <span class="hero__icon">
+                                        <i
+                                            class="fa-solid fa-chevron-right"
+                                        ></i>
+                                    </span>
+                                </a>
+                                <div class="hero__book--call">
+                                    Schedule a Call
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </section>
