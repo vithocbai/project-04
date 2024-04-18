@@ -621,6 +621,8 @@ textarea {
 
 /* === Services === */
 .services {
+    position: relative;
+    z-index: 1;
     padding: 68px 0 100px;
     margin-top: 185px;
     background: #fff6ed;
@@ -644,7 +646,7 @@ textarea {
 .services__list {
     margin-top: 70px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: auto 1fr auto;
 }
 
 .services__item {
@@ -698,3 +700,44 @@ textarea {
     margin-left: 6px;
 }
 
+.services__column--media {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.services__media {
+    position: relative;
+}
+
+.services__media::after {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    z-index: -1;
+    display: inline-block;
+    content: "";
+    width: 410px;
+    height: 350px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #9df1fb 0%, #73d0db 108.14%);
+}
+
+.services__media--img {
+    display: block;
+    width: 447px;
+    margin: 0 auto;
+}
+
+.services__btn {
+    margin-top: 45px;
+}
+
+.services__cta--btn {
+    min-width: 214px;
+    color: #ff5b2e;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 100%;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+}
