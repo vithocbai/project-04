@@ -1,0 +1,27 @@
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="12" height="12" fill="#E5E5E5"/>
+<g id="Lucy-Pet Care Landing Page" clip-path="url(#clip0_0_1)">
+<rect width="1440" height="7200" transform="translate(-234 -2676)" fill="#FFFAF5"/>
+<g id="Our Services" clip-path="url(#clip1_0_1)">
+<rect id="base" x="-234" y="-398" width="1440" height="1043" fill="#FFF6ED"/>
+<g id="card 8">
+<g id="Rectangle 47">
+<rect x="-99" y="-166" width="294" height="208" rx="10" fill="white"/>
+<rect x="-98" y="-165" width="292" height="206" rx="9" stroke="#FFBC7A" stroke-opacity="0.26" stroke-width="2"/>
+</g>
+<g id="ArrowUpRight">
+<path id="Vector" d="M3 9L9 3" stroke="#FF5B2E" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M4.125 3H9V7.875" stroke="#FF5B2E" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1440" height="7200" fill="white" transform="translate(-234 -2676)"/>
+</clipPath>
+<clipPath id="clip1_0_1">
+<rect width="1440" height="1043" fill="white" transform="translate(-234 -398)"/>
+</clipPath>
+</defs>
+</svg>
