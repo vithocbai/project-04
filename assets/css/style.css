@@ -97,7 +97,6 @@ textarea {
 }
 
 .section-desc {
-    margin-top: 24px;
     color: #656689;
     font-size: 16px;
     font-weight: 400;
@@ -340,6 +339,7 @@ textarea {
 }
 
 .about__heading {
+    margin-top: 24px;
     margin-top: 15px;
     max-width: 446px;
 }
@@ -524,6 +524,7 @@ textarea {
 }
 
 .about__heading--bottom {
+    margin-top: 24px;
     max-width: 543px;
 }
 
@@ -566,6 +567,9 @@ textarea {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.about__item--title {
     color: #48496a;
     font-family: Sora;
     font-size: 1.8rem;
@@ -607,3 +611,25 @@ textarea {
     background-color: #ff5d31;
     border-radius: 99px;
 }
+
+/* === Services === */
+.services {
+    padding: 68px 0 100px;
+    margin-top: 185px;
+    background: #FFF6ED;
+}
+
+.services__desc {
+    color: #5e6085;
+    text-align: center;
+    font-family: Sora;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.services__heading {
+    text-align: center;
+    line-height: 1.19;
+}
+
