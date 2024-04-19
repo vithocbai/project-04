@@ -109,6 +109,7 @@ textarea {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
 /* === Header === */
 .header {
     padding: 26px 0;
@@ -759,4 +760,78 @@ textarea {
 .members__heading {
     text-align: center;
     margin-top: 15px;
+}
+
+/* members__list */
+.members__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 35px;
+    margin-top: 95px;
+    text-align: center;
+}
+
+.members__avatar {
+    position: relative;
+    width: 234px;
+    height: 266px;
+    border-radius: 129.5px;
+    background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%);
+    margin: 0 auto;
+}
+
+.members__avatar--img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 129.5px;
+}
+
+.members__deco {
+    position: absolute;
+}
+
+.members__deco--bottom {
+    bottom: -16px;
+    left: -16px;
+}
+
+.members__deco--top {
+    top: -16px;
+    left: -16px;
+}
+
+.members__item--desc {
+    display: inline-block;
+    margin-top: 29px;
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.members__item--name {
+    margin-top: 14px;
+    color: #000958;
+    font-family: Sora;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.members__cta {
+    text-align: center;
+    margin-top: 48px;
+}
+
+.members__cta--btn {
+    min-width: 193px;
+    border: 1px solid rgba(255,91,46,0.6);  
+    font-size: 1.6rem;
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+    color: #ff5b2e;
+    font-weight: 500;
 }
