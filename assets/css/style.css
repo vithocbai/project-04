@@ -562,13 +562,13 @@ textarea {
 .about__list::before {
     width: 95px;
     height: 2px;
-    background: #ff5b2e;
+    background: var(--primary-color);
 }
 
 .about__list::after {
     width: 100%;
     opacity: 0.07;
-    background: #ff5b2e;
+    background: var(--primary-color);
 }
 
 .about__item {
@@ -674,7 +674,11 @@ textarea {
     content: "";
     width: 2px;
     height: 22px;
-    background: linear-gradient(90deg, #ff5b2e 0.39%, #ffa187 100.29%);
+    background: linear-gradient(
+        90deg,
+        var(--primary-color) 0.39%,
+        #ffa187 100.29%
+    );
     margin-right: 12px;
 }
 
@@ -735,7 +739,7 @@ textarea {
 
 .services__cta--btn {
     min-width: 214px;
-    color: #ff5b2e;
+    color: var(--primary-color);
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 100%;
@@ -829,9 +833,135 @@ textarea {
 
 .members__cta--btn {
     min-width: 193px;
-    border: 1px solid rgba(255,91,46,0.6);  
+    border: 1px solid rgba(255, 91, 46, 0.6);
     font-size: 1.6rem;
     box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
-    color: #ff5b2e;
+    color: var(--primary-color);
     font-weight: 500;
 }
+
+/* === Princing === */
+.pricing {
+    padding: 86px 0;
+    background: #fff6ed;
+}
+
+.pricing__heading {
+    text-align: center;
+}
+
+.pricing__desc {
+    margin: 24px auto 0;
+    max-width: 709px;
+    text-align: center;
+}
+
+/* Switch */
+
+.pricing__switch-wrrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 38px;
+}
+
+.pricing__switch-inner {
+    position: relative;
+}
+
+.pricing__switch-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    width: 276px;
+    height: 56px;
+    border-radius: 99px;
+    border: 1px solid #ff5b2e;
+    user-select: none;
+}
+
+.pricing__switch-label::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    content: "";
+    width: 140px;
+    height: 100%;
+    border-radius: inherit;
+    background: #ff5b2e;
+    transition: width 0s linear;
+}
+
+.pricing__switch-input:checked + .pricing__switch-label::after {
+    left: auto;
+    right: 0;
+    width: 131px;
+    transition: width 3s linear;
+}
+
+.pricing__switch-value {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 500;
+
+}
+
+.pricing__switch-input:not(:checked) + .pricing__switch-label .pricing__switch-value:nth-of-type(2),
+.pricing__switch-input:checked + .pricing__switch-label  .pricing__switch-value:nth-of-type(1) {
+    color: #ff5b2e;
+}
+
+.pricing__sale-of {
+    position: absolute;
+    right: -110px;
+    bottom: 39px;
+} 
+
+
+.pricing__switch--value:nth-child(2) {
+    color: #fff;
+} 
+.pricing__register {
+    position: relative;
+    text-align: center;
+    --height: 56px;
+    width: 276px;
+    height: var(--height);
+    margin: 38px auto 0;
+    border-radius: 99px;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+}
+
+.pricing__register--month {
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    left: 40px;
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.pricing__register--year {  
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    right: 0;
+    min-width: 131px;
+    text-align: right;
+    background: var(--primary-color);
+    border: none;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 1.6rem;  
+    font-weight: 500;
+    line-height: 1;
+}
+
+
