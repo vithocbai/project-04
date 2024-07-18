@@ -1,3 +1,5 @@
-<svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M13.1875 1.0625L5.3125 8.93715L1.375 5" stroke="#FFF2E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Check">
+<path id="Vector" d="M11.8125 3.9375L5.6875 10.0622L2.625 7" stroke="#FF5B2E" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
 </svg>

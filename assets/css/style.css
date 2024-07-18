@@ -907,11 +907,14 @@ textarea {
     color: #fff;
     font-size: 1.6rem;
     font-weight: 500;
-
 }
 
-.pricing__switch-input:not(:checked) + .pricing__switch-label .pricing__switch-value:nth-of-type(2),
-.pricing__switch-input:checked + .pricing__switch-label  .pricing__switch-value:nth-of-type(1) {
+.pricing__switch-input:not(:checked)
+    + .pricing__switch-label
+    .pricing__switch-value:nth-of-type(2),
+.pricing__switch-input:checked
+    + .pricing__switch-label
+    .pricing__switch-value:nth-of-type(1) {
     color: #ff5b2e;
 }
 
@@ -919,12 +922,11 @@ textarea {
     position: absolute;
     right: -110px;
     bottom: 39px;
-} 
-
+}
 
 .pricing__switch--value:nth-child(2) {
     color: #fff;
-} 
+}
 .pricing__register {
     position: relative;
     text-align: center;
@@ -948,7 +950,7 @@ textarea {
     line-height: 1;
 }
 
-.pricing__register--year {  
+.pricing__register--year {
     position: absolute;
     top: 50%;
     translate: 0 -50%;
@@ -959,9 +961,78 @@ textarea {
     border: none;
     color: #fff;
     font-family: Poppins;
-    font-size: 1.6rem;  
+    font-size: 1.6rem;
     font-weight: 500;
     line-height: 1;
 }
 
+/* Pricing-list */
+.pricing__list {
+    margin-top: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 44px;
+}
 
+.pricing__column {
+    border-radius: 20px;
+    background: #fff;
+    padding: 30px 28px 43px;
+}
+
+.pricing__version {
+    color: #ff5b2e;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.pricing__care-desc {
+    margin-top: 8px;
+    color: #3f4065;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.pricing__dola {
+    margin-top: 24px;
+    color: #000958;
+    font-family: Sora;
+    font-size: 3.3rem;
+    font-weight: 700;
+    line-height: 1.03;
+}
+
+.pricing__purchase {
+    margin-top: 22px;
+    min-width: 246px;
+    height: 44px;
+    border-radius: 39px;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+    color: #ff5b2e;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.pricing__purchase:hover {
+    color: #fff;
+}
+
+.pricing__service-row {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.pricing__service-desc {
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+}
