@@ -1086,7 +1086,6 @@ textarea {
 
 .review__list {
     display: flex;
-   
 }
 
 .review__item {
@@ -1145,4 +1144,99 @@ textarea {
     height: 2px;
     background: #000;
     margin-right: 8px;
+}
+
+/*====== Blog ===== */
+.blog {
+    margin-top: 77px;
+}
+
+.blog__header {
+    display: flex;
+    align-items: center;
+}
+
+.blog__heading {
+    white-space: nowrap;
+    color: #000958;
+    font-family: Sora;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.19;
+    margin-right: 512px;
+}
+
+.blog__desc {
+    width: 350px;
+    color: #656689;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.88;
+}
+
+.blog__view {
+    margin-top: 24px;
+    width: 182px;
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    border-radius: 31px;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+}
+
+.blog__list {
+    margin-top: 54px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 48px;
+}
+
+.blog__item-media {
+    border-radius: 24px;
+    background: #90ccff;
+    padding: 24px 0 0 36px;
+}
+
+.blog__item:nth-child(2) .blog__item-media {
+    background: #ff997e;
+}
+
+.blog__item:last-child .blog__item-media {
+    background: #5bd6e2;
+}
+
+.blog__item-date {
+    color: #fff;
+    font-family: Sora;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.22;
+}
+
+.blog__item-img {
+    margin-top: 25px;
+    display: block;
+    width: 322px;
+    height: 296px;
+}
+
+.blog__item-sub-heading {
+    margin-top: 28px;
+    color: #000958;
+    font-family: Sora;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.55;
+}
+
+.blog__item-desc {
+    width: 351px;
+    margin-top: 16px;
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.72;
 }
