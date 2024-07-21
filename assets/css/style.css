@@ -110,6 +110,28 @@ textarea {
     overflow: hidden;
 }
 
+.dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 56px;
+}
+
+.dot {
+    width: 7px;
+    height: 7px;
+    border: 1px solid #ff5b2e;
+    border-radius: 50%;
+}
+
+.active {
+    width: 21px;
+    height: 7px;
+    border-radius: 99px;
+    background-color: #ff5b2e;
+}
+
 /* === Header === */
 .header {
     padding: 26px 0;
@@ -1035,4 +1057,92 @@ textarea {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1;
+}
+
+/* Review */
+.review {
+    padding: 53px 0;
+}
+
+.review__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 44px;
+}
+
+.review__control:hover {
+    cursor: pointer;
+}
+
+.next {
+    transform: rotate(180deg);
+    margin-left: auto;
+}
+
+.review__inner-list {
+    overflow: hidden;
+}
+
+.review__list {
+    display: flex;
+   
+}
+
+.review__item {
+    display: flex;
+    align-items: center;
+    gap: 115px;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.review__media {
+    width: 274;
+    flex-shrink: 0;
+    border-radius: 137px;
+}
+
+.review__img {
+    width: 100%;
+    border-radius: inherit;
+}
+
+.review__heading {
+    margin-top: 80px;
+    color: #000958;
+    font-family: Sora;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 119%;
+}
+
+.review__desc {
+    margin-top: 24px;
+    width: 553px;
+    color: #000;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.56;
+}
+
+.review__author {
+    display: flex;
+    align-items: center;
+    margin-top: 34px;
+    color: #282828;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.review__author::before {
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: #000;
+    margin-right: 8px;
 }
